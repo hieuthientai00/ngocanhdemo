@@ -63,4 +63,35 @@ public class Shop {
 	def static void applyCouponAndAddToCartWithGlobalVariable(){
 		applyCouponAndAddToCart(GlobalVariable.productName, GlobalVariable.urlProduct, GlobalVariable.coupon)
 	}
+
+	@Keyword
+	def static void addToCartIncreaseProduct(String productName,String urlProduct, int quantity){
+		navigatetoDetailPage(productName, urlProduct)
+
+		WebUI.waitForElementPresent(findTestObject('Cart Page/increase-button'), GlobalVariable.waitPresentTimeout)
+
+		for(int i = 0; i < quantity; i++) {
+			WebUI.click(findTestObject('Cart Page/increase-button'))
+		}
+
+		WebUI.waitForElementPresent(findTestObject('Pages/Shop page/btnAddToCart'), GlobalVariable.waitPresentTimeout)
+		WebUI.click(findTestObject('Pages/Shop page/btnAddToCart'))
+
+		WebUI.waitForElementPresent(findTestObject('Pages/Shop page/lnkViewCart'), GlobalVariable.waitPresentTimeout)
+		WebUI.click(findTestObject('Pages/Shop page/lnkViewCart'))
+
+		WebUI.verifyElementPresent(findTestObject('Pages/Shop page/btnProceed'), GlobalVariable.waitPresentTimeout)
+		WebUI.click(findTestObject('Pages/Shop page/btnProceed'))
+	}
+
+	@Keyword
+	def static void removeProduct(String productName, String urlProduct){
+		addToCart(productName, urlProduct)
+
+		WebUI.waitForElementPresent(findTestObject('Cart Page/remove-button'), GlobalVariable.waitPresentTimeout)
+		WebUI.click(findTestObject('Cart Page/remove-button'))
+
+		WebUI.verifyElementPresent(findTestObject('Pages/Shop page/btnProceed'), GlobalVariable.waitPresentTimeout)
+		WebUI.click(findTestObject('Pages/Shop page/btnProceed'))
+	}
 }

@@ -23,6 +23,4 @@ CustomKeywords.'sample.Shop.addToCartWithGlobalVariable'()
 
 CustomKeywords.'sample.Checkout.CheckoutShop'(firstName,lastName,companyName, country, address, city, postCode, Phone)
 
-CustomKeywords.'sample.Login.logoutFromApplication'()
-
 WebUI.closeBrowser()

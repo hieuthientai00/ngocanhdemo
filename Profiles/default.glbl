@@ -31,7 +31,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'KMS'</initValue>
+      <initValue>'Icitechnology'</initValue>
       <name>companyName</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -91,12 +91,12 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'katalon'</initValue>
+      <initValue>'Hoàng'</initValue>
       <name>firstName</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'customer'</initValue>
+      <initValue>'Ngọc Anh'</initValue>
       <name>lastName</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

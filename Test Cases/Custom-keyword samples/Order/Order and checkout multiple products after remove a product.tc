@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Order and checkout multiple products after remove a product</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ff93dfad-658f-426e-8ae5-8c8297cd0a1e</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b2b5a41e-a421-4e90-aa6d-9bad93209d8a</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Flying Ninja'</defaultValue>
+      <description></description>
+      <id>b2b5a41e-a421-4e90-aa6d-9bad93209d8a</id>
+      <masked>false</masked>
+      <name>productName</name>
+   </variable>
+</TestCaseEntity>
