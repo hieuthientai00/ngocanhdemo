@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Login Failed - Username has whitespace</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ffa0989b-c945-42a1-b77d-dae3e6cd0f53</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>SCRIPT_VARIABLE</type>
+      <value>&quot;     customer&quot;</value>
+      <variableId>bf47fcb4-4303-4314-ba52-758cf0d6473a</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'     customer'</defaultValue>
+      <description></description>
+      <id>bf47fcb4-4303-4314-ba52-758cf0d6473a</id>
+      <masked>true</masked>
+      <name>usernamewhitespace</name>
+   </variable>
+</TestCaseEntity>
